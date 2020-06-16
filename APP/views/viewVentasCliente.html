@@ -1,0 +1,76 @@
+<div class="card">
+  <!--
+    <button class="btn btn-default btn-icon btn-round" id="btnAtrasClientePedido" onclick="CrearNuevoPedido();">
+      <i class="now-ui-icons shopping_cart-simple"></i>
+    </button>
+    -->
+    <div class="card-header">
+      <!--<span onclick="CrearNuevoPedido();"><b><-Atras </b></span>-->
+        <button class="btn btn-default btn-icon btn-round" id="btnAtrasClientePedido" onclick="CrearNuevoPedido();">
+            <i class="now-ui-icons shopping_cart-simple"></i>
+          </button>
+      <span>Seleccione un cliente</span>
+    </div>
+    <div class="card-body">
+      
+    </div>
+</div>
+   
+<div class="card table-responsive" id="tblClientesPedido">
+            
+        
+</div>
+
+
+<div id="fixed-btn2">
+  <button class="btn btn-circle btn-xl" id="btnClientesFiltrar">
+      <i class="now-ui-icons ui-1_zoom-bold"></i>
+  </button>
+</div>
+
+
+<!-- Modal Tipo Reparto // obs -->
+<div class="modal fade" id="ModalOpcionesObs" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <span class="text-right">
+          <!--<label class="text-primary" id="txtPedidoClienteSelected"></label>-->
+        </span>
+      <div class="modal-header">
+        <label class="modal-title" id="txtNomClienteSelected">Consumidor Final</label>
+      </div>
+
+      <div class="modal-body">
+        <div class="col-8">
+          <div class="row form-group">
+              <label>Tipo de Entrega:</label>
+              <select class="form-control" id="cmbPedidoTipoEntrega">
+                <option value="1">Reparto/Mensajero</option>
+                <option value="2">Empresa externa</option>
+                <option value="3">Recoje en bodega</option>
+              </select>
+
+              <label>Observaciones:</label>
+              <!--
+                <input class="form-control" id="txtPedidoObs" type="text" placeholder="Escriba sus observaciones...">
+                -->
+              <textarea rows="4" cols="80" class="form-control" id="txtPedidoObs" placeholder="Escriba aqui sus observaciones..."></textarea>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-round btn-lg" data-dismiss="modal">
+              <i class="now-ui-icons ui-1_simple-remove"></i>Cancelar
+          </button>
+          
+          <button type="button" class="btn btn-primary btn-round btn-lg" data-dismiss="modal" id="btnPedidoTerminar">
+              <i class="now-ui-icons ui-1_check"></i>Guardar
+          </button>          
+      </div>
+
+    </div>
+  </div>
+</div>
